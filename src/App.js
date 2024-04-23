@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+
+/*import './App.css';
 
 function App() {
   return (
@@ -19,6 +19,43 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+export default App;
+*/
+
+import Loginform from "./components/loginform.js"
+
+
+
+import { useEffect, useState } from 'react';
+import {BrowserRouter,Routes,Route}from 'react-router-dom';
+
+
+function App() {
+  const[token,setToken] = useState(false)
+  if(token){
+    sessionStorage.setItem('token',JSON.stringify(token))
+  }
+  useEffect(() => {
+    if(sessionStorage.getItem('token')){
+      let data = JSON.parse(sessionStorage.getItem('token'))
+      setToken(data)
+    }
+  },[])
+
+  
+  return ( 
+   
+    
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Loginform/>}/>
+      
+    </Routes>
+    </BrowserRouter>
+   
   );
 }
 
