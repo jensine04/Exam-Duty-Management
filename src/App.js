@@ -26,6 +26,8 @@ export default App;
 */
 
 import Loginform from "./components/loginform.js"
+import AdminLogin from "./components/adminlogin.js";
+import FacultyLogin from "./components/facultylogin.js"
 
 
 
@@ -52,6 +54,8 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Loginform/>}/>
+      <Route path="/adminlogin" element={<AdminLogin />} />
+      <Route path="/facultylogin" element={<FacultyLogin/>}/>
       
     </Routes>
     </BrowserRouter>

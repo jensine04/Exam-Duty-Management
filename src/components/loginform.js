@@ -11,8 +11,8 @@ export default function Loginform()
                 <div className="hero-left">
                    <h1>Exam Duty Management Cell</h1><br/>
                     <h3>Organising your Exam duties..</h3><br/><br/><br></br>
-                    <a href="/loginstudent">Login for Students</a>
-                    <a href="/loginfaculty">Login for Faculty</a>
+                    <a href="/facultylogin">Login for Faculty</a>
+                    <a href="/adminlogin">Login for Admin</a>
                 </div>
                 <div className="hero-right">
                 <img src={mec} alt=""></img>
