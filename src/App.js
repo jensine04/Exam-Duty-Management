@@ -31,6 +31,7 @@ import FacultyLogin from "./components/facultylogin.js"
 
 
 
+
 import { useEffect, useState } from 'react';
 import {BrowserRouter,Routes,Route}from 'react-router-dom';
 
@@ -56,6 +57,7 @@ function App() {
       <Route path="/" element={<Loginform/>}/>
       <Route path="/adminlogin" element={<AdminLogin />} />
       <Route path="/facultylogin" element={<FacultyLogin/>}/>
+     
       
     </Routes>
     </BrowserRouter>
