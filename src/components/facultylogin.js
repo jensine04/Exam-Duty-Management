@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import './facultylogin.css'; // Import CSS file for styling (create this file in the same directory)
 import mec from '../images/mec.jpg'
+import axios from 'axios';
 
 const FacultyLogin = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios.post('http://localhost:3001/facultylogin',{username,password})
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
     // Handle form submission logic here
   };
 
@@ -21,8 +25,8 @@ const FacultyLogin = () => {
           <h2>Login for Faculty</h2>
           <form onSubmit={handleSubmit}>
             <div className="inputBx">
-              <span>Email</span>
-              <input type="email" name="" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <span>Username</span>
+              <input type="text" name="" value={username} onChange={(e) => setUsername(e.target.value)} />
             </div>
             <div className="inputBx">
               <span>Password</span>

@@ -3,7 +3,7 @@ import './adminlogin.css'; // Import CSS file for styling (create this file in t
 import mec from '../images/mec.jpg'
 
 const AdminLogin = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
@@ -21,8 +21,8 @@ const AdminLogin = () => {
           <h2>Login for Admin</h2>
           <form onSubmit={handleSubmit}>
             <div className="inputBx">
-              <span>Email</span>
-              <input type="email" name="" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <span>Username</span>
+              <input type="text" name="" value={username} onChange={(e) => setUsername(e.target.value)} />
             </div>
             <div className="inputBx">
               <span>Password</span>
