@@ -72,7 +72,7 @@ section {
   letter-spacing: 1px;
 }
 
-.inputBx input[type="email"],
+.inputBx input[type="text"],
 .inputBx input[type="password"] {
   width: 100%;
   padding: 10px 20px;
