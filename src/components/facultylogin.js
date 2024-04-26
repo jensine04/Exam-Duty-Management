@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './facultylogin.css'; // Import CSS file for styling (create this file in the same directory)
 import mec from '../images/mec.jpg'
 
-const AdminLogin = () => {
+const FacultyLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -45,7 +45,7 @@ const AdminLogin = () => {
   );
 };
 
-export default AdminLogin;
+export default FacultyLogin;
 
 
 
