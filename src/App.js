@@ -32,7 +32,7 @@ function App() {
       <Route path="/adminlogin" element={<AdminLogin />} />
       <Route path="/facultylogin" element={<FacultyLogin/>}/>
       <Route path="/facultypage" element={<FacultyPage/>}/>
-      
+            
     </Routes>
     </BrowserRouter>
    </ChakraProvider>
